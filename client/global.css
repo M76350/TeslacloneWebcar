@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tesla design system - Clean, minimalist color scheme
+   * Colors are expressed as HSL values for Tailwind compatibility
+  */
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 7%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 7%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 7%;
+
+    --primary: 0 0% 7%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 7%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 7%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 7%;
+
+    --radius: 0.5rem;
+
+    /* Tesla brand colors */
+    --tesla-red: 0 100% 50%;
+    --tesla-blue: 204 100% 50%;
+    --tesla-dark: 0 0% 7%;
+    --tesla-light: 0 0% 96%;
+  }
+
+  .dark {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 7%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .tesla-button {
+    @apply inline-flex items-center justify-center px-8 py-3 text-sm font-medium transition-all duration-200 rounded-sm border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+
+  .tesla-button-primary {
+    @apply tesla-button bg-primary text-primary-foreground hover:bg-primary/90 focus:ring-primary;
+  }
+
+  .tesla-button-secondary {
+    @apply tesla-button bg-transparent border-primary text-primary hover:bg-primary hover:text-primary-foreground focus:ring-primary;
+  }
+
+  .tesla-section {
+    @apply min-h-screen flex flex-col justify-center items-center relative overflow-hidden;
+  }
+
+  .tesla-hero-title {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-2;
+  }
+
+  .tesla-hero-subtitle {
+    @apply text-lg md:text-xl text-center text-muted-foreground mb-8;
+  }
+
+  .tesla-nav-item {
+    @apply text-sm font-medium hover:text-primary transition-colors duration-200 cursor-pointer;
+  }
+}
