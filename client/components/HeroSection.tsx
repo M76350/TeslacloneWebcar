@@ -61,10 +61,9 @@ export default function HeroSection({
           </Button>
           <Button
             variant="outline"
-            className="tesla-button-secondary min-w-[200px] border-white text-white hover:bg-white hover:text-black"
+            className="tesla-button-secondary min-w-[200px] text-black hover:bg-black hover:text-white"
             onClick={onSecondaryCTA}
-          >
-            {secondaryCTA}
+          >{secondaryCTA}
           </Button>
         </div>
       </div>

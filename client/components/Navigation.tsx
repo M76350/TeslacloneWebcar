@@ -96,7 +96,7 @@ export default function Navigation({ className }: NavigationProps) {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="lg:hidden border-t border-border">
-            <div className="space-y-2 px-4 py-6">
+            <div className="space-y-2 px-4 py-6 bg-white">
               {[...navItems, ...rightNavItems].map((item) => (
                 <Link
                   key={item.name}
