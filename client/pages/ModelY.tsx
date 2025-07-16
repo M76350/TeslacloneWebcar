@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
+import ImageSlider from "./ImageSlider";
 
 export default function ModelY() {
   return (
@@ -30,6 +31,12 @@ export default function ModelY() {
           </div>
         </div>
       </section>
+
+      <div className="border w-full h-screen ">
+        <video controls autoPlay loop className="w-full h-full object-cover " width={1000} height={1000} src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/Cybertruck-Redefining-Mobile-v2.mp4"></video>
+      {/* <ImageSlider /> */}
+      </div>
+      
     </main>
   );
 }

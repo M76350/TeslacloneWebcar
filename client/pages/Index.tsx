@@ -27,7 +27,10 @@ export default function Index() {
         onPrimaryCTA={() => handleOrderNow("Demo")}
         onSecondaryCTA={() => handleLearnMore("Demo")}
       />
-
+      <div className="border w-full h-screen ">
+        <video  autoPlay loop className="w-full h-full object-cover " width={1000} height={1000} src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/Cybertruck-Terrain-Mobile.mp4"></video>
+      {/* <ImageSlider /> */}
+      </div>
       {/* Model Y Section */}
       <ProductShowcase
         title="Model Y"
@@ -47,6 +50,7 @@ export default function Index() {
         onPrimaryCTA={() => handleOrderNow("Model 3")}
         onSecondaryCTA={() => handleLearnMore("Model 3")}
       />
+
 
       {/* Model X Section */}
       <ProductShowcase
