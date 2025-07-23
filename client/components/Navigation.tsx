@@ -31,7 +31,7 @@ export default function Navigation({ className }: NavigationProps) {
   ];
 
   const rightNavItems = [
-    { name: "Shop", href: "#shop" },
+    { name: "Shop", href: "/shop" },
     { name: "Account", href: "#account" },
     { name: "Menu", href: "#menu" },
   ];
